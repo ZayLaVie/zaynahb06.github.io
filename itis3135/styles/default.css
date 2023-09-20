@@ -19,13 +19,21 @@ h1{
     text-align: center;
 }
 
-p, ul{
+main{
     font-family: verdana;
     font-size: 20px;
     text-align: center;
     color:#A2A77F;
+    margin-left: 15%;
+    margin-right:15%;
+
+}
+ul{
+    text-align: left;
+    padding-left:auto;
 }
 a{
     color: blueviolet;
     font-size: 22px;
+    text-decoration: none;
 }
