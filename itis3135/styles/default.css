@@ -54,3 +54,31 @@ table{
 table, th, td {
     border:1px solid black;
 }
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+fieldset{
+    border: none;
+    padding: 2rem 0;
+    text-align: left;
+    margin-left: 15%;
+}
+
+input{
+    display: block;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+    width: 100px;
+    min-height: 1.5em;
+    min-width: 300px
+}
+
+.astrid{
+    display: inline;
+    color: rgb(196, 67, 67);
+}
