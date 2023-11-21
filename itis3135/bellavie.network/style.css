@@ -1,0 +1,70 @@
+body{
+    background-color: #A2A77F;
+}
+
+header{
+    width: 700px;
+    height: 50%;
+    background-color: rgb(224, 205, 183);
+    padding: 10px;
+    margin-left: 23%;
+    text-align: center;
+    margin-top: 4%;
+    border-radius: 25px;
+}
+img{
+    height: auto;
+    vertical-align: middle;
+    margin-right:80px;
+    width: 140px;
+}
+h1{
+    font-family:galiche ;
+    display: inline-block;
+    font-size: 45px;
+    margin-top: 10%;
+    margin-right: 80px;
+    vertical-align: middle;
+}
+
+.services{
+    width: 70%;
+    height: 50%;
+    background-color: rgb(224, 205, 183);
+    padding: 10px;
+    margin-left: 180px;
+    text-align: center;
+    margin-top: 3%;
+    border-radius: 25px;
+    
+}
+
+ul{
+    text-align: left ;
+    display: inline-block;
+    list-style-type: square;
+    font-size: 19px;
+}
+
+p{
+    font-size: 20px;
+
+}
+
+h5{
+    font-size: 25px;
+}
+.contact{
+    width: 70%;
+    height: 50%;
+    background-color: rgb(224, 205, 183);
+    padding: 1px;
+    margin-left: 180px;
+    text-align: center;
+    margin-top: 3%;
+    border-radius: 25px;
+}
+
+.copy{
+    font-size: 15px;
+}
