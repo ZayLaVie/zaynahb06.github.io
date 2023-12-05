@@ -1,0 +1,18 @@
+html{
+   
+    min-height: 100%;
+    background-image: url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.logo img{
+    width: 10%;
+    background-color: rgba(46, 46, 45, 0.749);
+    margin: 45px ;
+    border-radius: 10px;
+    border: 1px solid slategray
+}
+

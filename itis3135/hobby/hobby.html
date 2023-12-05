@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+</head>
+<style>
+    body{
+        background-image: url("https://www.marthastewart.com/thmb/zsSejXVHW9uxFjWBpccnBvbi-8A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crochet-hook-getty-1019-771e7822f69c4a3e9547fe842cd9bc9e.jpg");
+        align-items: center;
+        background-repeat: no-repeat;
+        overflow: auto;
+    
+
+    }
+
+    
+
+    .content h1, .content p, .content h2{
+        text-align: center; 
+        color: #ffff;
+        margin-top: 5%;
+        padding: 15px;
+        background: transparent;
+        height: 10%;
+        background-color:#00000024;
+        margin-left: auto;
+        margin-right: auto;
+ 
+    }
+
+    .content p{
+        background-color:#00000040;
+    }
+
+    nav{
+        width: 70%;
+        height: 50px;
+        background-color:#00000024;
+        padding-bottom: 15px;
+        padding-left:10px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    
+    }
+
+    .myNav li, a{
+        display: inline-block;
+		color: #fff;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+    }
+
+    .bottom{
+        width: 80%;
+        height: 50px;
+        background-color:#00000024;
+        padding: 15px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    
+    
+
+    .gall{
+        background-color: rgba(255, 245, 231, 0.627);
+        display: inline;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    
+
+    }
+
+    .img_container{
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .mytools{
+        width: 70%;
+        height: 70%;
+        background-color: rgb(236, 203, 161);
+        text-align: center;
+        margin: 10px auto;
+           
+    }
+
+    .tool_text{
+        
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        height: 200px;
+        background-color:#0000005f;
+        padding-bottom: 15px;
+        border: 2px solid #fff;
+        font-size: 20px;
+       
+    }
+
+    
+    .tool_text li{
+        list-style: none;
+        color: #fff;
+    }
+    .tool_text li ::before{
+        content: "■ "; 
+        color: #fff;  
+
+    }
+
+    .mygallery{
+        background-color: rgba(229, 166, 102, 0.484);
+        width: 70%;
+        text-align: center;
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+
+    }
+    .img{
+        background-color: rgba(27, 25, 23, 0.484);
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    figcaption{
+        background-color: #00000040;
+        display: flex;
+        display: block;
+        color: #fff;
+        border-radius: 10px;
+        padding: 20px 10px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid #fff;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .form{
+        width: 50%;
+        color: #fff;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 20px 10px;
+        
+    }
+
+    .newcontainer{
+        background-color: rgba(27, 25, 23, 0.484);
+        width: 60%;
+        text-align: center;
+        border-radius: 10px;
+        object-fit: cover;
+        margin: 0 auto;
+        padding: 25px 10px;
+
+
+    }
+
+    submit :hoover{
+        background-color: rgba(229, 166, 102, 0.484);
+    }
+
+    .productcontainer{
+        background-color: rgba(27, 25, 23, 0.484);
+        width: 60%;
+        text-align: center;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+ 
+    
+
+</style>
+<body>
+    <header>
+        <div class="myNav">
+			<nav>
+				<ul>
+					<li><a  href="#home" class="tab"  id="hometab" onclick="openPage('home', this, '#00000024')">Home</a></li>
+					<li><a href="#aboutme" class="tab"  id="abouttab" onclick="openPage('aboutme', this, '#00000024')">About Me</a></li>
+					<li><a href="#tools" class="tab"  id="toolstab" onclick="openPage('tools', this, '#00000024')">Tools</a></li>
+					<li><a href="#product" class="tab"  id="toolstab" onclick="openPage('product', this, '#00000024')">Product</a></li>
+					<li><a href="#gallery" class="tab"  id="gallerytab" onclick="openPage('gallery', this, '#00000024')">Gallery</a></li>
+					<li><a href="#contactus" class="tab"  id="contactustab" onclick="openPage('contactus', this, '#00000024')">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+        
+    </header>
+    <main>
+    
+        <div id = "home" class="content">
+            <h1 style="font-size:50px; width:50%; text-align: center;";> Zainab Bello's Hobby: <br> Crocheting</h1>
+            <div class="img_container">
+                <figure>
+                    <img src = "img/gloves.PNG" class="gall" style="width: 200px; ">
+                    <img src = "img/top.png" class="gall" style=" width: 200px; height: 150px;"> 
+                </figure>
+            </div>
+
+            <p style="font-size: 20px; width: 75%;";>
+                Crocheting is a versatile and creative craft that involves using a hooked 
+                needle to interlock yarn or thread into intricate patterns. The rhythmic 
+                motion of crocheting can be both meditative and rewarding, allowing crafters 
+                to create a wide range of items, from cozy blankets and stylish garments to delicate lacework. 
+                Whether you're a beginner or an experienced crafter, crocheting offers a fulfilling way to 
+                express your artistic flair and produce handmade treasures.  
+            </p>
+        </div>
+
+        <div id="aboutme" class="content">
+            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff";>About Me </h2>
+            <div class="img_container">
+                <img src="img/myPic.jpg" style="width: 300px; align-items: center; margin-left: auto; margin-right: auto;">
+
+            </div>
+            <p style="font-size: 20px; width: 75%;";>
+                Hello, my name is Zainab. I am currently a junior at UNC Charlotte, majoring in computer science 
+                and concentrating in software engineering with a minor in mathematics. 
+                Crocheting is my favorite hobby because it helps me relax and stay engaged when I'm bored.
+
+
+            </p>
+
+        </div>
+    
+        <div id="tools" class="content">
+            
+            <!--<div class="mytools
+               // <div class="img_tool">
+                    //<img src=" https://noelebellecrochet.com/wp-content/uploads/2022/12/14089411-3DDE-406F-975B-0AD9BB6362F4.jpg" style="width: 200px">
+                   // <img src="https://flaxandtwine.com/cdn/shop/products/Size91.25mm-4978_3712bd31-a46c-4a16-8b1e-6db5e93fdf60_grande.jpg?v=1675274426" style="width: 200px; height: 270px; "><br>
+                   // <img src =
+                 </div>
+            </div> -->
+            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff;"> Crochet Tools</h2>
+            <div class="img_container">
+                <img src ="https://embed-ssl.wistia.com/deliveries/8afe51c32cffe54888001c7df01ef41b6f93df20.jpg" style="width: 70%;">   
+            </div>
+
+            <div class="tool_text">
+                
+                <ul>
+                    <li><span>Scissors</span></li><br>
+                    <li><span>Yarn</span></li><br>
+                    <li><span>Crochet Hooks</span></li><br>
+                    <li><span>Measuring Tape</span></li><br>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="gallery" class="content">
+            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff";>Gallery </h2>
+            <div class="mygallery">
+                <figure>
+                    <img src="img/scrunchie.png" alt="scrunchie" class="img" style="width: 200px;"> 
+                    <figcaption>Scrunchies</figcaption> 
+                    <img src="img/hat.PNG" alt="hat" class="img" style="width: 200px; height: 265px; object-fit: contain;">
+                    <figcaption>Scrunchies</figcaption> 
+                    <img src="img/bag1.png" alt="black bag" class="img" style="width: 200px;">
+                    <figcaption>Scrunchies</figcaption> 
+                    <img src="img/top.png" alt="top" class="img" style="width: 200px;">
+                    <figcaption>Scrunchies</figcaption> 
+                    <img src="img/gloves.PNG" alt="gloves" class="img" style="width: 200px; height: 265px; object-fit: contain;">
+                    <figcaption>Scrunchies</figcaption> 
+                    <img src="img/bag2.PNG" alt="bag" class="img" style="width: 200px;">
+                    <figcaption>Double color </figcaption> 
+                </figure>
+            </div>
+
+
+
+        </div>
+
+        <div id="product" class="content">
+            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff";>Product </h2>
+            <div class="productcontainer">
+                <div >
+                    <div class="why">
+                        <h3>Why</h3>
+                        <p>I began crocheting during the COVID pandemic as a way to keep myself engaged and enhance my skills.
+                            Through crocheting, I have cultivated various abilities, with a particular emphasis on fostering 
+                            focus and discipline. My interest in creating handmade products has been a driving force behind the 
+                            development of my crochet skills.
+                         </p>
+                    </div>
+                    <div class="how">
+                        <h3>How</h3>
+                        <p>
+                            To crochet, start by selecting a suitable yarn and crochet hook size based on the project you have in mind. 
+                            Begin with a slipknot and place it on the hook, then proceed to make a foundation chain of desired length. 
+                            Once the foundation chain is ready, engage in various crochet stitches like single crochet, double crochet, 
+                            or others, depending on your pattern. Continue following the pattern instructions, creating rows or rounds 
+                            until you achieve the desired size and shape for your project.
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <h3>How</h3>
+                        <p>
+                            To crochet, start by selecting a suitable yarn and crochet hook size based on the project you have in mind. 
+                            Begin with a slipknot and place it on the hook, then proceed to make a foundation chain of desired length. 
+                            Once the foundation chain is ready, engage in various crochet stitches like single crochet, double crochet, 
+                            or others, depending on your pattern. Continue following the pattern instructions, creating rows or rounds 
+                            until you achieve the desired size and shape for your project.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="contactus" class="content">
+            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff";>Contact Us </h2>
+            <div class ="newcontainer">
+                <div class="table">
+                    <table>
+                        <tr>
+                            <td><strong>Email</strong></td>
+                            <td>zbello@uncc.edu</td>
+                        </tr>
+            
+                        <tr>
+                            <td><strong>Phone</strong></td>
+                            <td>(999)-222-7865</td>
+                            
+                        </tr>
+            
+                        <tr>
+                            <td><strong>Address</strong></td>
+                            <td>9087 Maybrook Dr, Houton Tx, 23445</td>
+                          
+                        </tr>
+                    </table>
+                </div>
+
+    
+                <div class = "form">
+                    <form>
+                        <fieldset>
+                            <label for="first_name">Enter Your First Name:
+                                <input id="first_name" type="text" name="first_name" placeholder="first name"required/> 
+                            </label><br>
+                            <label for="last_name">Enter Your Last Name:
+                                 <input id="last_name" type="text" name="last_name" placeholder="last name" required/> 
+                            </label><br>
+                            <label for="email">Enter Your Email:
+                                <input id="email" type="email" name="email" placeholder="nnn@email.com" required/>    
+                            </label><br>
+            
+                            <label for="phone-number">Enter Your Phone Number:
+                                <input id="phone-number" type="number" name="phone-number" placeholder="(XXX) -XXX-XXXX" required/>    
+                            </label> <br>
+
+                            <input type="submit" value="Submit" class="submit" style="background-color: rgba(27, 25, 23, 0.484); color: #fff; border: none; width: 100px; font-size: 12px; border-radius: 10px;"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+    <footer>
+        <div class="bottom">
+            <a href="https://webpages.charlotte.edu/zbello/">CLT Webpage</a>
+            ||
+            <a href="https://github.com/ZayLaVie">GitHub</a>
+            ||
+            <a href="https://github.com/ZayLaVie/zaynahb06.github.io">Github.io</a>
+            ||
+            <a href="https://github.com/ZayLaVie/zaynahb06.github.io/tree/main/itis3135">ITSC3135.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/zbello">freecodecamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/zbello">Codeacademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/bellozainab/">LinkedIn</a>  
+            
+        </div>
+        
+    </footer>
+</body>
+    <script>
+        function openPage(pageName, elements, color){
+            // Hides all elements under content
+            var i, content, tabs;
+            content= document.getElementsByClassName("content");
+            for(i=0; i< content.length; i++){
+                content[i].style.display ="none";
+            }
+
+            tabs = document.getElementsByClassName("tab");
+            for(i=0; i< tabs.length; i++){
+            tabs[i].style.backgroundColor = "";
+            }
+
+            document.getElementById(pageName).style.display = "block";
+
+            elements.style.backgroundColor = color;
+
+        }
+
+        document.getElementById("hometap").click();
+    </script>
+</html>
