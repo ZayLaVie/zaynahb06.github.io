@@ -4,9 +4,8 @@ body{
 
 .center, nav {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 60%;
+    margin: 0 auto;
   }
 
 .center0{
@@ -31,10 +30,19 @@ main{
     margin-right:15%;
 
 }
-ul{
+.mycourse, .about{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.ex{
     text-align: left;
     padding-left:auto;
 }
+
 a{
     color: blueviolet;
     font-size: 22px;
@@ -45,9 +53,11 @@ ol{
     list-style-position: inside;
 }
 
-ol, li{
+.tabular{
     text-align: left;
-    margin-left: 15%;
+    margin: 0 25% auto;
+    align-items: center;
+    width: 75%;
 }
 
 table{
@@ -67,8 +77,13 @@ form{
   margin-bottom: 35px;
   width: 50%;
   height: 100%;
+  margin: 0 auto;
   
-  margin-left: 190px;
+}
+
+section1{
+    align-items: center;
+    margin: 0 auto;
 }
 
 fieldset {
@@ -78,7 +93,7 @@ fieldset {
     justify-content: center;
   }
 
-label, legend{
+.section1, legend{
     display: block;
     text-align: left;
   }
@@ -96,21 +111,18 @@ input{
     
 }
 
-input[type="checkbox"]{
-    margin-left: 100px;
-    display: inline;
-    vertical-align: middle;
-    margin-right: -250px;
-    
-}
 
-input[type="radio"]{
-    margin-left: 100px;
-    display: inline;
+input[type=checkbox], input[type=radio] {
     vertical-align: middle;
-    margin-right: -250px
-    
-}
+    position: relative;
+    bottom: -25px;
+    right: -110px;
+    white-space: none;
+    text-align: left;
+  }
+  
+  
+
 
 
 .submit, .reset{
@@ -142,12 +154,7 @@ input[type="radio"]{
     display: inline-flex;
 }
 
-.center1{
-    display: inline;
-    vertical-align: middle;
-  
-    
-}
+
 
 .overview{
     background-color: rgba(27, 25, 23, 0.484);
@@ -172,4 +179,10 @@ input[type="radio"]{
     margin: 0 auto;
     border-radius: 10px;
 
+}
+
+.img_valid{
+    align-items: center;
+    display: inline;
+    margin: 0 43% auto; ;
 }
