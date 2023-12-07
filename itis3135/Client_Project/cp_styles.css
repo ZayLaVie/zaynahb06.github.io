@@ -8,11 +8,62 @@ html{
 
 }
 
-.logo img{
-    width: 10%;
-    background-color: rgba(46, 46, 45, 0.749);
-    margin: 45px ;
+.logo {
+    width: 12%; 
     border-radius: 10px;
-    border: 1px solid slategray
+    float: left;
+    display: inline-block;
+    margin: 0 50px;
+    
+}
+
+
+nav{
+    width: 600px;
+    height: 50%;
+    border-radius: 10px;
+    background-color: rgba(46, 46, 45, 0.749);
+    border: 1px solid slategray;
+    padding-bottom: 12px;
+    padding-left:10px;
+    padding-top: 10px;
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: 40px;
+   
+
+   
+
+
+}
+
+
+a{
+    margin-right: 45px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.page{
+    color: #fff;
+    font-size: 50px;
+    background-color: rgba(46, 46, 45, 0.749);
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    padding-left:10px;
+    padding-top: 10px;
+    position: relative;
+    top : 200px;
+    padding-bottom: 12px;
+    border: 1px solid slategray;
+    border-radius: 10px;
+    
+
+
 }
 
