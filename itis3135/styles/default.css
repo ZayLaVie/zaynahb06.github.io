@@ -86,7 +86,7 @@ section1{
     margin: 0 auto;
 }
 
-fieldset {
+fieldset, .userform {
     border: none;
     padding: 2rem 0;
     border-bottom: 3px solid #3b3b4f;
@@ -198,3 +198,21 @@ input[type=checkbox], input[type=radio] {
     display: inline;
     margin: 0 43% auto; ;
 }
+
+
+
+
+.user label{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 10%;
+
+}
+.user input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  }
+
