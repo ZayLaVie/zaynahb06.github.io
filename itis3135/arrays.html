@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Zainab Bello || ITIS 3135 Arrays</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        
+        <h2>Arrays</h2>
+        <form>
+            <fieldset>
+                <div>
+                    <h3 class="h3">Input Employee Data</h3>
+                    <label for="name">Enter Employee Name:</label>
+                    <input class="array-name" id="name" type="text" placeholder="Jane Doe" required><br>
+                    <br>
+                    <label for="salary">Enter Employee Salary:</label>
+                    <input id="salary" type="number" placeholder="30000" required><br>
+                    <br>
+                    <input type="button" id="addSalary" value="Add Employee Data to Array">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div>
+                    <h3>Average Salary & Highest Salary</h3>
+                    <input type="button" id="displayResults" value="Display Results">
+                    <div id="results">
+                        <div id="average"></div>
+                        <div id="highest"></div>
+                      
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <div>
+                    <h3>Results Table</h3>
+                    <input type="button" id="displaySalary" value="Display Salary">
+                    <table id="results_table">      
+                    </table>
+                </div>
+            </fieldset>
+            
+            
+            <div class="dropdown">
+                <h3>Select an Employee by Name:</h3>
+                <div class="line">
+                    <input type="button" id="displaySelection" value="Select Employee">
+                    <select id="employee_select" class="line"></select>
+                </div>
+               
+            </div>
+    </form><br>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>

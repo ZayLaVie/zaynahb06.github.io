@@ -1,7 +1,42 @@
 body{
     background-color: #1C3041;
 }
+@media only screen and (min-width: 576px) {
+    body {
+        margin: 20px;
+        padding: 30px;
+    }
 
+    nav {
+        font-size: 10px;
+        padding: 5px 5px;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a.tabular, a.cert-links {
+        font-size: 16px;
+    }
+
+    p.copyright {
+        font-size: 16px;
+    }
+}
 .center, nav {
     display: block;
     width: 60%;
@@ -151,6 +186,7 @@ input[type=checkbox], input[type=radio] {
 .trademark, .cert-links{
     display: flex;
     justify-content: center;
+    color:#fff;
 }
 
 .center{
@@ -254,3 +290,12 @@ input[type="text"] {
     position: relative;
     text-align: center;
   }
+
+
+  .line{
+    display: inline;
+  }
+
+.h3{
+    margin-bottom: 30px;
+}
