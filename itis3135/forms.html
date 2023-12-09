@@ -33,18 +33,21 @@
         <h2>Forms</h2>
         <p>Fill out all required information here</p>
 
+
         <form>
             <fieldset>
-                <div class ="section1"> 
+                <div class ="section1">
                     <label for="first_name"> <p class="astrid">* </p>Enter Your First Name:
-                        <input id="first_name" type="text" name="first_name" placeholder="first name"required/> 
+                        <input id="first_name" type="text" name="first_name" placeholder="first name"required/>
                     </label>
+                   
                     <label for="last_name"><p class="astrid">* </p>Enter Your Last Name:
-                        <input id="last_name" type="text" name="last_name" placeholder="last name" required/> 
+                        <input id="last_name" type="text" name="last_name" placeholder="last name" required/>
                     </label>
                     <label for="email"><p class="astrid"> * </p>Enter Your Email:
                         <input id="email" type="email" name="email" placeholder="nnn@email.com" required/>    
                     </label>
+
 
                     <label for="phone-number"><p class="astrid"> * </p>Enter Your Phone Number:
                         <input id="phone-number" type="number" name="phone-number" placeholder="(XXX) -XXX-XXXX" required/>    
@@ -52,55 +55,61 @@
                 </div>
             </fieldset>
 
-            <fieldset>
+
+            <fieldset class="checkbox">
                 <legend><p class="astrid">* </p>Area(s) of interest:</legend>
-                <label for="gaming"  class="check"> 
-                    <input class="inline" id="gaming" type="checkbox" name="gaming" required>Gaming
-                </label>
-
-                <label for="research" class="check"> 
-                    <input class="inline" id="research" type="checkbox" name="research" required>Research
-                </label>
-
-                <label for="robotic" class="check"> 
-                    <input class="inline" id="robotic" type="checkbox" name="robotic" required>AI/Robotic
-                </label>
-
-                <label for="marketing" class="check"> 
-                    <input class="inline" id="marketing" type="checkbox" name="marketing" required>Marketing
-                </label>
-
-                
+                <div class="section2">
+                    <input class="inline" id="gaming" type="checkbox" name="gaming" required>
+                    <label for="gaming"  class="check">Gaming</label>
+                    <br>
+                    <input class="inline" id="research" type="checkbox" name="research" required>
+                    <label for="research" class="check">Research</label>
+                    <br>
+                    <input class="inline" id="robotic" type="checkbox" name="robotic" required>
+                    <label for="robotic" class="check">AI/Robotic</label>
+                    <br>
+                    <input class="inline" id="marketing" type="checkbox" name="marketing" required>
+                    <label for="marketing" class="check">Marketing</label>
+                </div>        
             </fieldset>
-                <label><p class="astrid">* </p>How did you hear aboout us?
-                    <select id="referrer" name="referrer">
-                        <option value="">(select one)</option>
-                        <option value="1">LinkedIn</option>
-                        <option value="2">Advisor</option>
-                        <option value="3">Tutoring</option>
-                        <option value="4">Other</option>
-                      </select>
-                </label>
+               
             <fieldset>
-
+                <legend><p class="astrid">* </p>How did you hear aboout us?</legend>
+                    <label for="select">
+                        <select id="referrer" name="referrer">
+                            <option value="">(select one)</option>
+                            <option value="1">LinkedIn</option>
+                            <option value="2">Advisor</option>
+                            <option value="3">Tutoring</option>
+                            <option value="4">Other</option>
+                        </select>
+                    </label>
             </fieldset>
 
+
             <fieldset>
-                <legend><p class="astrid">* </p> Account type </legend> 
-                <label for="personal-account"><input id="personal-account" type="radio" 
-                    name="account-type" class="inline" checked /> Personal
-                </label>
-                <label for="student-account"><input id="student-account" type="radio" 
-                    name="account-type" class="inline" /> Student
-                </label>
-              </fieldset>
+                <legend><p class="astrid">* </p> Account type </legend>
+
+
+                <div class="section4">
+                    <label for="personal-account"><input id="personal-account" type="radio"
+                        name="account-type" class="inline" checked /> Personal
+                    </label>
+                    <br>
+                    <label for="student-account"><input id="student-account" type="radio"
+                        name="account-type" class="inline" /> Student
+                    </label>
+                </div>
+            </fieldset>
+
 
               <input type="submit" value="Submit" class="submit"/>
               <input type="reset" value="Reset" class="reset"/>
     </form>
 
+
         </form>
-        
+       
     </main><br>
     <footer>
         <nav>
@@ -128,7 +137,8 @@
                 src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
                 CSS!" >
             </a>
-        </div>   
+        </div>  
     </footer>
 </body>
 </html>
+

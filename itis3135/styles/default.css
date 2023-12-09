@@ -93,13 +93,13 @@ fieldset {
     justify-content: center;
   }
 
-.section1, legend{
+  .section1, legend{
     display: block;
     text-align: left;
-  }
+}
 
 
-input{
+.section1 input {
     display: block;
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
@@ -107,20 +107,25 @@ input{
     margin: 10px 0 0 0;
     min-height: 1.5em;
     min-width: 300px;
-    
-    
+}
+
+
+.section2, .section4 {
+    text-align: left;
+    padding-left: 100px;
+}
+
+
+select {
+    display: block;
 }
 
 
 input[type=checkbox], input[type=radio] {
-    vertical-align: middle;
-    position: relative;
-    bottom: -25px;
-    right: -110px;
-    white-space: none;
-    text-align: left;
-  }
-  
+    display: inline;
+    margin: 0 auto;
+}
+
   
 
 
@@ -163,6 +168,13 @@ input[type=checkbox], input[type=radio] {
     padding: 10px 25px;
     text-align: center;
     margin: 0 auto;
+    
+}
+
+.overview li{
+    text-align: left;
+    align-items: center;
+    margin: 0 25% auto;
 }
 
 .wireframe{
