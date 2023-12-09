@@ -1,0 +1,58 @@
+<!--Reference: https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/default.css">
+        <title>Zainab Bello || ITIS 3135 Calculator</title>
+    </head>
+    <body>
+        <!--header component-->
+        <div data-include="components/header.html"></div>
+        <!--main comoponent-->
+        <main>
+            <hr>
+            <h2>Try a Calculator!</h2>
+            <div class="calculator-container">
+                <table class="calculator">
+                    <tr class="calculator">
+                        <td colspan="3" class="calculator"><input class="display" type="text" id="calculation" disabled></td>
+                        <td class="calculator"><input type="clear-button" id="btn" value="C" readonly></td>
+                    </tr>
+                    <tr class="calculator">
+                        <td class="calculator"><input type="num-button" value="1" id="number1" readonly></td>
+                        <td class="calculator"><input type="num-button" value="2" id="number2" readonly></td>
+                        <td class="calculator"><input type="num-button" value="3" id="number3" readonly></td>
+                        <td class="calculator"><input type="num-button" value="+" id="add" readonly></td>
+                    </tr>
+                    <tr class="calculator">
+                        <td class="calculator"><input type="num-button" value="4" id="number4" readonly></td>
+                        <td class="calculator"><input type="num-button" value="5" id="number5" readonly></td>
+                        <td class="calculator"><input type="num-button" value="6" id="number6" readonly></td>
+                        <td class="calculator"><input type="num-button" value="-" id="subtract" readonly></td>
+                    </tr>
+                    <tr class="calculator">
+                        <td class="calculator"><input type="num-button" value="7" id="number7" readonly></td>
+                        <td class="calculator"><input type="num-button" value="8" id="number8" readonly></td>
+                        <td class="calculator"><input type="num-button" value="9" id="number9" readonly></td>
+                        <td class="calculator"><input type="num-button" value="/" id="divide" readonly></td>
+                    </tr>
+                    <tr class="calculator">
+                        <td class="calculator"><input type="num-button" value="." id="decimal" readonly></td>
+                        <td class="calculator"><input type="num-button" value="0" id="number0" readonly></td>
+                        <td class="calculator"><input type="equal-button" value="=" id="calculate" readonly></td>
+                        <td class="calculator"><input type="num-button" value="*" id="multiply" readonly></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </main>
+        <!--footer component-->
+        <div data-include="components/footer.html"></div>
+        <!--javascript-->
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/calculator_try.js"></script>
+    </body>
+</html>
