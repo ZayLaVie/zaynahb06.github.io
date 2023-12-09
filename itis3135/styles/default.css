@@ -148,7 +148,7 @@ input[type=checkbox], input[type=radio] {
     color: #A2A77F;
 }
 
-.trademark{
+.trademark, .cert-links{
     display: flex;
     justify-content: center;
 }
@@ -216,13 +216,14 @@ input[type=checkbox], input[type=radio] {
     margin-left: 10px;
   }
 
-  .calculator {
+  .calculator, .calculator_fcc {
     border: 1px solid black;
     width: 400px;
     background: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 15px 5px 0 5px;
+    margin:0 auto;
 }
 
 input[type="num-button"] {
@@ -246,3 +247,10 @@ input[type="text"] {
     background: lightgrey;
     border: 1px solid black;
 }
+
+.calculator__keys > * {
+    background-color: #fff;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+  }
