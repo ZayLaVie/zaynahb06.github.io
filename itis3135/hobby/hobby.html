@@ -119,37 +119,64 @@
 
     .mygallery{
         background-color: rgba(229, 166, 102, 0.484);
-        width: 70%;
+        width: 60%;
+        height: 60%;
         text-align: center;
         border-radius: 10px;
-        object-fit: cover;
-        margin: 0 auto;
-        padding: 20px 10px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
+        margin:0 auto;
+        align-items: center;
+        
+        
 
     }
-    .img{
-        background-color: rgba(27, 25, 23, 0.484);
-        border-radius: 10px;
-        object-fit: cover;
+
+    
+    .img_container1{
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 5%;
     }
+
+    
+
+    .img_container1 img{
+        
+        background-color:#0000005f;
+        border-radius: 25px;
+        
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding:20px;
+
+
+    }
+
+    [data-component="slideshow"] .slide {
+        display: none;
+    }
+
+    [data-component="slideshow"] .slide.active {
+        display: block;
+    }
+
+    [data-component="slideshow"] .slide img {
+        width: 600px;
+    }
+
+    
+
 
     figcaption{
         background-color: #00000040;
-        display: flex;
-        display: block;
         color: #fff;
         border-radius: 10px;
-        padding: 20px 10px;
+        width:150px;
         text-align: center;
-        position: absolute;
-        bottom: 0;
-        
-        text-align: center;
+        margin: 0 auto;
+        align-items: center;
+        font-size: 30px;
     }
 
     table, th, td {
@@ -276,26 +303,43 @@
         </div>
         
         <div id="gallery" class="content">
-            <h2 style="font-size:50px; width:50%; text-align: center; color:#fff";>Gallery </h2>
+            <br>
             <div class="mygallery">
-                <figure>
-                    <img src="img/scrunchie.png" alt="scrunchie" class="img" style="width: 200px;"> 
-                    <figcaption>Scrunchies</figcaption> 
-                    <img src="img/hat.PNG" alt="hat" class="img" style="width: 200px; height: 265px; object-fit: contain;">
-                    <figcaption>Scrunchies</figcaption> 
-                    <img src="img/bag1.png" alt="black bag" class="img" style="width: 200px;">
-                    <figcaption>Scrunchies</figcaption> 
-                    <img src="img/top.png" alt="top" class="img" style="width: 200px;">
-                    <figcaption>Scrunchies</figcaption> 
-                    <img src="img/gloves.PNG" alt="gloves" class="img" style="width: 200px; height: 265px; object-fit: contain;">
-                    <figcaption>Scrunchies</figcaption> 
-                    <img src="img/bag2.PNG" alt="bag" class="img" style="width: 200px;">
-                    <figcaption>Double color </figcaption> 
-                </figure>
-            </div>
-
-
-
+                <div class="img_container1">
+                    <figure>
+                        <div id="slideshow" data-component="slideshow">
+                            <div role="list">
+                                <div class="slide">
+                                    <img src="img/scrunchie.png" alt="scrunchie" style="width: 400px;">
+                                    <figcaption>Scrunchie</figcaption>
+                                </div>
+                                <div class="slide">
+                                    <img src="img/bag1.png" alt="black bag" style="width: 400px;">
+                                    <figcaption>Black Bag</figcaption>
+                                </div>
+                                <div class="slide">
+                                    <img src="img/gloves.PNG" alt="gloves" style="width: 400px; height:465px">
+                                    <figcaption>Gloves</figcaption>
+                                </div>
+                                <div class="slide">
+                                    <img src="img/hat.PNG" alt="hat" style="width: 400px; height:465px">
+                                    <figcaption>Hat</figcaption>
+                                </div>
+                                <div class="slide">
+                                    <img src="img/top.png" alt="top" style="width: 400px;">
+                                    <figcaption>Top</figcaption>
+                                </div>
+                                <div class="slide">
+                                    <img src="img/bag2.PNG" alt="design bag" style="width: 400px;">
+                                    <figcaption>Design bag</figcaption>
+                                </div>
+                            </div>
+                        </div><br>
+                        <figcaption style="width:350px"><em>A slideshow of my recent work</em></figcaption>
+                    </figure>
+                </div>
+            </div><br>
+            
         </div>
 
         <div id="product" class="content">
@@ -427,5 +471,26 @@
         }
 
         document.getElementById("hometab").click();
+
+        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+        slideshows.forEach(initSlideShow);
+
+        function initSlideShow(slideshow) {
+
+            var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+            var index = 0, time = 5000;
+            slides[index].classList.add('active');
+
+            setInterval( () => {
+                slides[index].classList.remove('active');
+                
+                index++;
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+
+            }, time);
+        }
     </script>
 </html>
