@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactus|| vieStylez</title>
     <link rel="stylesheet" href="cp_styles.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     
 </head>
 <body class="contactus">
@@ -34,20 +35,52 @@
             <div class="contactus-container">
             
                 <form>
-                    <h1>Contact Us Form</h1>
-                    <input type="text" id="firstName" placeholder="First Name" required >
-                    <input type="text" id="lastName" placeholder="Last Name" required >
-                    <input type="email" id="email" placeholder="Email" required >
-                    <input type="text" id="mobile" placeholder="Mobile" required >
+                    <h1>Contact Us </h1>
+                    <div class="input-group">
+                        <input type="text" id="firstName" placeholder="First Name" class="name" required  onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="lastName" placeholder="Last Name" class="name" required  onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Email" class="email" required  onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="mobile" placeholder="Mobile" class="mobile" required  onkeyup="validateMobile()">
+                        <span id="mobile-error"></span>
+                    </div>
+                    <div class="input-group">
                     <h4>Type your Message Here......</h4>
-                    <textarea required></textarea>
-                    <input type="submit" value="send" id="button">
+                        <textarea required></textarea>
+                        
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" value="send" id="button" onclick="return validateForm()">
+                        <span id="submit-error"></span>
+                    </div>
             </form>
             </div>
             
         </main>
-        <footer></footer>
+        <footer>
+            <div class="myfooter">
+                <p class="trademark"> Designed by <a href="../bellavie.network/bellavie.network.html">bellaVie.network </a>&copy; 2023</p>
+            </div><br>
+            <div class="img_valid">
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="valid HTML">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+                CSS!">
+        </a>
+    </div>
+        </footer>
     
-    
+    <script src="script.js"></script>
 </body>
 </html>

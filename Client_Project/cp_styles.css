@@ -1,26 +1,35 @@
 
 
 body.service{
-    background-image:url("../https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
+    background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     background-color: black;
     color:#fff;
     padding-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    min-height: 100%;
 }
 body.aboutus{
     background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     background-color: black;
     color:#fff;
-    padding-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    min-height: 100%;
 }
 
 body.gallery{
-    
+    background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     background-color: black;
-    display: flex;
+
     align-items: center;
-    min-height: 100vh;
-    transform-style: preserve-3d;
     text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    min-height: 100%;
     
   
 }
@@ -40,6 +49,10 @@ header{
 body.contactus{
     background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    min-height: 100%;
 }
 
 body.book{
@@ -66,7 +79,9 @@ body.book{
 
 }
 
-
+.gallery header{
+    margin-left: 70px;
+}
 
 nav{
     width: 100%;
@@ -97,6 +112,28 @@ nav{
 
 }
 
+footer{
+   
+    border-radius: 10px;
+    background-color: rgba(46, 46, 45, 0.749);
+    border: 1px solid slategray;
+    width: 50%;
+    padding: 12px;
+    margin: 0 auto;
+    text-align: center;;
+}
+
+.aboutus footer{
+    position: absolute;
+    bottom: -15%;
+    text-align: center;
+    align-items: center;
+    margin-left: 250px;
+}
+
+.myfooter p{
+    color:#FFF
+}
 
 
 a, li{
@@ -107,7 +144,7 @@ a, li{
     display: inline;
 }
 
-.content h1{
+.content h1,.img_container1 h1{
     font-size: 140px;
     font-weight: 600;
     color: transparent;
@@ -124,7 +161,7 @@ a, li{
     border: 2px solid slategray;
     padding: 14px 70px;
     border-radius: 50px;
-    margin-left: 45px;
+    margin-left: 50px;
     background-color: rgba(46, 46, 45, 0.749);
     cursor: pointer;
     transition: color 0.4s linear;
@@ -193,84 +230,7 @@ a, li{
     }
 }
 
-.hair_img{
-    width: 250px;
-}
 
-.box{
-    position: relative;
-    width:200px;
-    height: 200px;
-    transform-style: preserve-3d;
-    transition: 1.5s;
-    transform: perspective(1000px) rotateY(0deg);
-    -webkit-box-reflect: below 0px linear-gradient(transparent, #0004);
-    
-}
-
-.box span{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-}
-
-.box span img{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-}
-
-.btns{
-    position: absolute;
-    bottom: 100px;
-    display: flex;
-    gap: 30px;
-}
-
-.btns .bnn{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-
-}
-.btns .bnn:active{
-    background-color: #fff;
-}
-
-.btns .bnn::before{
-    content:" ";
-    position:absolute;
-    width: 15px;
-    height:15px;
-    border-top: 3x solid #fff;
-    border-right: 3px solid #fff;
-    transform: rotate(45deg)translate(-2.5px, 2.5px);
-
-}
-
-.btns .bnn.prev::before{
-    transform: rotate(225deg)translate(-2.5px, 2.5px);
-}
-
-.btns .bnn:active::before{
-    border-top: 3px solid #000;
-    border-right: 3px solid #000;
-}
 
 .card img{
     width: 200px;
@@ -333,6 +293,7 @@ a, li{
     
 }
 
+
 .main_img img{
     width: 600px;
     height: auto;
@@ -384,6 +345,13 @@ hr{
     margin-right: 60px;
 }
 
+.gallery h1{
+    text-align: center;
+    margin: 0 auto;
+    color:#FFF;
+    position:absolutet;
+    top: 0%;
+}
 
 .contactus-container{
     min-height:100vh;
@@ -393,6 +361,11 @@ hr{
     background: url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     color: #fff;
 
+
+}
+
+.contactus header {
+    margin-left: 70px;
 }
 
 
@@ -408,6 +381,7 @@ hr{
     
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .contactus-container h1{
@@ -430,6 +404,7 @@ hr{
     background: none;
     border-bottom: 2px solid #fff;
     display: block;
+    color:#FFF
 }
 
 .contactus-container form input::placeholder{
@@ -461,4 +436,108 @@ hr{
     max-height: 80px;
 }
 
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(46, 46, 45, 0.713);
+}
+
+.contactus-container form #button{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+    padding:0;
+    color: #000;
+
+}
+
+.contactus-container form #button:hover{
+    opacity:0.7;
+}
+
+.input-group span i{
+    color: red;
+}
+
+.img_container1 {
+    text-align: center;
+}
+
+.img_container2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.img_container1{
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.img_container1 {
+    flex: 1;
+     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+    
+
+
+ .img_container1 h1 {
+    flex: 1;
+    font-size: 200px;
+    margin-top: 100px;
+    font-weight:900;
+}
+
+
+.img_container1 img{
+    width: 70%;
+    border-radius: 25px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+.img_container2 img{
+    width: 150px;
+    border-radius: 25px;
+    margin: 0 auto;
+    display:flex;
+
+}
+
+[data-component="slideshow"] .slide {
+    display: none;
+}
+
+[data-component="slideshow"] .slide.active {
+    display: block;
+}
+
+[data-component="slideshow"] .slide img {
+    width: 500px;
+}
 
