@@ -49,16 +49,16 @@ header{
 body.contactus{
     background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
     background-color: black;
-    color:#fff;
-    align-items: center;
-    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center ;
     min-height: 100%;
 }
 
-
+body.book{
+    background-image:url("https://img.freepik.com/premium-photo/black-fabric-texture-background-3d-illustration_46250-2810.jpg");
+    background-color: black;
+}
 *{
     margin:0;
     padding: 0;
@@ -78,7 +78,6 @@ body.contactus{
     justify-content: center;
 
 }
-
 
 .gallery header{
     margin-left: 70px;
